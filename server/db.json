@@ -1,0 +1,83 @@
+{
+  "articulos": [
+    {
+      "id": 1,
+      "referencia": "001",
+      "nombre": "Producto A",
+      "descripcion": "Descripción del Producto A",
+      "precioSinImpuestos": 2,
+      "impuestoAplicable": 0.21
+    },
+    {
+      "id": 2,
+      "referencia": "002",
+      "nombre": "Producto B",
+      "descripcion": "Descripción del Producto B",
+      "precioSinImpuestos": 15,
+      "impuestoAplicable": 0.21
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "items": [
+        {
+          "referencia": "001",
+          "cantidad": 2,
+          "precioUnitarioSinImpuestos": 2,
+          "impuestoPorcentaje": 21,
+          "precioTotalSinImpuestos": 4,
+          "precioTotalConImpuestos": 4.84
+        },
+        {
+          "referencia": "002",
+          "cantidad": 8,
+          "precioUnitarioSinImpuestos": 15,
+          "impuestoPorcentaje": 21,
+          "precioTotalSinImpuestos": 120,
+          "precioTotalConImpuestos": 145.2
+        }
+      ],
+      "precioTotalSinImpuestos": 109,
+      "precioTotalConImpuestos": 113.74000000000001
+    },
+    {
+      "id": 2,
+      "items": [
+        {
+          "referencia": "001",
+          "cantidad": 1,
+          "precioUnitarioSinImpuestos": 2,
+          "impuestoPorcentaje": 21,
+          "precioTotalSinImpuestos": 2,
+          "precioTotalConImpuestos": 2.1
+        }
+      ],
+      "precioTotalSinImpuestos": 2,
+      "precioTotalConImpuestos": 2.1
+    },
+    {
+      "id": 3,
+      "items": [
+        {
+          "referencia": "001",
+          "cantidad": 2,
+          "precioUnitarioSinImpuestos": 2,
+          "impuestoPorcentaje": 21,
+          "precioTotalSinImpuestos": 4,
+          "precioTotalConImpuestos": 4.0042
+        },
+        {
+          "referencia": "002",
+          "cantidad": 2,
+          "precioUnitarioSinImpuestos": 15,
+          "impuestoPorcentaje": 21,
+          "precioTotalSinImpuestos": 30,
+          "precioTotalConImpuestos": 30.0315
+        }
+      ],
+      "precioTotalSinImpuestos": 34,
+      "precioTotalConImpuestos": 34.0357
+    }
+  ]
+}

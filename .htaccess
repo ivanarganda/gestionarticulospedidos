@@ -1,0 +1,15 @@
+RewriteEngine On
+# RewriteBase /subdirectory # Uncomment if your app is in a subfolder
+
+# Serve any directory or file if it exists
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, redirect to index.html
+RewriteRule ^ index.html [QSA,L]
+
+<Files ~ "\.pdf$">
+  Header set X-Robots-Tag "noindex, nofollow" 
+  Header set X-Robots-Tag "noindex"
+  Header set X-Robots-Tag "noindex, nofollow"
+</Files>
