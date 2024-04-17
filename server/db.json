@@ -82,6 +82,14 @@
           "impuestoPorcentaje": 21,
           "precioTotalSinImpuestos": 30,
           "precioTotalConImpuestos": 30.0315
+        },
+        {
+          "referencia": "003",
+          "cantidad": 1,
+          "precioUnitarioSinImpuestos": 3,
+          "impuestoPorcentaje": 500,
+          "precioTotalSinImpuestos": 3,
+          "precioTotalConImpuestos": 3.1500000000000004
         }
       ],
       "precioTotalSinImpuestos": 34,
