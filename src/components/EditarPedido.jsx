@@ -125,7 +125,14 @@ export default function EditarPedido() {
       } else {
         setFieldsBudget({
           ...fieldsBudgets,
-          items: [...fieldsBudgets.items, item],
+          items: [...fieldsBudgets.items, {
+            referencia: item.referencia,
+            cantidad: 1,
+            precioUnitarioSinImpuestos:item.precioSinImpuestos,
+            impuestoPorcentaje:item.impuestoAplicable * 100,
+            precioTotalSinImpuestos: parseFloat(item.precioSinImpuestos) || 0,
+            precioTotalConImpuestos: parseFloat(item.precioSinImpuestos) * (1 + parseFloat(item.impuestoAplicable) / 100) || 0
+          }],
           precioTotalSinImpuestos: calculateTotalPrice(fieldsBudgets.items, 'precioTotalSinImpuestos'),
           precioTotalConImpuestos: calculateTotalPrice(fieldsBudgets.items, 'precioTotalConImpuestos'),
         });
