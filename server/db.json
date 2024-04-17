@@ -15,6 +15,14 @@
       "descripcion": "Descripción del Producto B",
       "precioSinImpuestos": 15,
       "impuestoAplicable": 0.21
+    },
+    {
+      "id": 3,
+      "referencia": "003",
+      "nombre": "trt",
+      "descripcion": "grfghthtg",
+      "precioSinImpuestos": 3,
+      "impuestoAplicable": 5
     }
   ],
   "pedidos": [

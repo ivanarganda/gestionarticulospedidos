@@ -16,6 +16,7 @@ export default function TableArticles() {
     return (
         <div className="container mx-auto py-8">
             <h1 className="text-2xl font-bold mb-4">Lista de Artículos</h1>
+            <Link to='/crear-articulo'>Crear nuevo articulo</Link>
             <div className="overflow-x-auto">
                 <table className="table-auto w-full">
                     <thead>
