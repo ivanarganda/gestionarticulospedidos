@@ -22,7 +22,7 @@ git clone git@github.com:ivanarganda/gestionarticulospedidos.git
 2. **Navigate to Project Directory:**
 
 
-3. **Install Dependencies:**
+3. **Install Dependencies: All dependencies are alocated in package.json only install them**
 
 ```
     npm install 
@@ -32,12 +32,8 @@ git clone git@github.com:ivanarganda/gestionarticulospedidos.git
 
 
 4. **Start JSON-Server:**
-- Ensure you have `json-server` installed globally. If not, you can install it using:
-  ```
-  npm install -g json-server@0.17.4
-  // or
-  yarn global add json-server@0.17.4
-  ```
+- Ensure you have `json-server` installed globally.
+
 - Start JSON-Server with the provided `db.json` file located in the `server` folder:
   ``` 
   Cotent JSON:
